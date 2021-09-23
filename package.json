@@ -4,22 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -L",
+    "start": "node index.js",
     "test": "mocha -w ./tests/**/*.spec.js"
   },
   "author": "Henry",
-  "license": "ISC",
+  "license": "MIT",
   "engines": {
-    "node": ">=12.18.3",
+    "node": "14.x",
     "npm": ">=6.14.6"
   },
   "dependencies": {
+    "ejs": "^3.1.5",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.15.2",
     "heroku": "^7.59.0",
     "ioredis": "^4.19.2",
     "jsonwebtoken": "^8.5.1",
@@ -28,10 +29,28 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0",
     "chai": "^4.2.0",
     "mocha": "^8.2.1",
     "nodemon": "^2.0.6",
     "supertest": "^6.0.1",
     "supertest-session": "^4.1.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abigailcruz1202/back-end-countries.git"
+  },
+  "keywords": [
+    "heroku",
+    "express",
+    "node"
+  ],
+  "bugs": {
+    "url": "https://github.com/Abigailcruz1202/back-end-countries/issues"
+  },
+  "homepage": "https://github.com/Abigailcruz1202/back-end-countries#readme"
 }
